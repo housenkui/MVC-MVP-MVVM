@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF9D56E02230C7F700402937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56DF2230C7F700402937 /* AppDelegate.m */; };
+		EF9D56E32230C7F700402937 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56E22230C7F700402937 /* ViewController.m */; };
+		EF9D56E62230C7F700402937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9D56E42230C7F700402937 /* Main.storyboard */; };
+		EF9D56E82230C7F800402937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9D56E72230C7F800402937 /* Assets.xcassets */; };
+		EF9D56EB2230C7F800402937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9D56E92230C7F800402937 /* LaunchScreen.storyboard */; };
+		EF9D56EE2230C7F900402937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56ED2230C7F900402937 /* main.m */; };
+		EF9D57C92230C84200402937 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EF9D56F72230C84100402937 /* LICENSE */; };
+		EF9D57CA2230C84200402937 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56FA2230C84100402937 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		EF9D57CB2230C84200402937 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57032230C84100402937 /* ViewController+MASAdditions.m */; };
+		EF9D57CC2230C84200402937 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57072230C84100402937 /* MASCompositeConstraint.m */; };
+		EF9D57CD2230C84200402937 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57082230C84100402937 /* MASConstraintMaker.m */; };
+		EF9D57CE2230C84200402937 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57092230C84100402937 /* MASLayoutConstraint.m */; };
+		EF9D57CF2230C84200402937 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D570A2230C84100402937 /* NSArray+MASAdditions.m */; };
+		EF9D57D02230C84200402937 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D570B2230C84100402937 /* View+MASAdditions.m */; };
+		EF9D57D12230C84200402937 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D570E2230C84100402937 /* MASConstraint.m */; };
+		EF9D57D22230C84200402937 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57102230C84100402937 /* MASViewConstraint.m */; };
+		EF9D57D32230C84200402937 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D57112230C84100402937 /* MASViewAttribute.m */; };
+		EF9D57D42230C84200402937 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EF9D57122230C84100402937 /* README.md */; };
+		EF9D582E2230C86200402937 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D582B2230C86200402937 /* NSObject+YYModel.m */; };
+		EF9D582F2230C86200402937 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D582C2230C86200402937 /* YYClassInfo.m */; };
+		EF9D58352230C96100402937 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D58342230C96100402937 /* Model.m */; };
+		EF9D58392230CB0500402937 /* MVPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D58382230CB0500402937 /* MVPTableViewCell.m */; };
+		EF9D583F2230CFE400402937 /* SKProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D583E2230CFE400402937 /* SKProxy.m */; };
+		EF9D58422230D5A200402937 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D58412230D5A200402937 /* BaseViewModel.m */; };
+		EF9D58452230D5BD00402937 /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D58442230D5BD00402937 /* MVVMViewModel.m */; };
+		EF9D58482230D5D200402937 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D58472230D5D200402937 /* MVVMViewController.m */; };
+		EF9D584B2230F6B400402937 /* Present.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D584A2230F6B400402937 /* Present.m */; };
+		EF9D584E2230F6C800402937 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D584D2230F6C800402937 /* MVPViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF9D56DB2230C7F700402937 /* MVP--MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP--MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9D56DE2230C7F700402937 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF9D56DF2230C7F700402937 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF9D56E12230C7F700402937 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF9D56E22230C7F700402937 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF9D56E52230C7F700402937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF9D56E72230C7F800402937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF9D56EA2230C7F800402937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF9D56EC2230C7F900402937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9D56ED2230C7F900402937 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF9D56F72230C84100402937 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EF9D56F92230C84100402937 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		EF9D56FA2230C84100402937 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		EF9D56FB2230C84100402937 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		EF9D56FC2230C84100402937 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		EF9D56FD2230C84100402937 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EF9D56FE2230C84100402937 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		EF9D56FF2230C84100402937 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		EF9D57002230C84100402937 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		EF9D57012230C84100402937 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		EF9D57022230C84100402937 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		EF9D57032230C84100402937 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		EF9D57042230C84100402937 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		EF9D57052230C84100402937 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		EF9D57062230C84100402937 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		EF9D57072230C84100402937 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		EF9D57082230C84100402937 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		EF9D57092230C84100402937 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		EF9D570A2230C84100402937 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		EF9D570B2230C84100402937 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		EF9D570C2230C84100402937 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EF9D570D2230C84100402937 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		EF9D570E2230C84100402937 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		EF9D570F2230C84100402937 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		EF9D57102230C84100402937 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		EF9D57112230C84100402937 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		EF9D57122230C84100402937 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF9D582A2230C86200402937 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		EF9D582B2230C86200402937 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		EF9D582C2230C86200402937 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		EF9D582D2230C86200402937 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		EF9D58302230C87E00402937 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		EF9D58332230C96100402937 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		EF9D58342230C96100402937 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		EF9D58362230CA1200402937 /* PresentDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentDelegate.h; sourceTree = "<group>"; };
+		EF9D58372230CB0500402937 /* MVPTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPTableViewCell.h; sourceTree = "<group>"; };
+		EF9D58382230CB0500402937 /* MVPTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPTableViewCell.m; sourceTree = "<group>"; };
+		EF9D583D2230CFE400402937 /* SKProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKProxy.h; sourceTree = "<group>"; };
+		EF9D583E2230CFE400402937 /* SKProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKProxy.m; sourceTree = "<group>"; };
+		EF9D58402230D5A200402937 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		EF9D58412230D5A200402937 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		EF9D58432230D5BD00402937 /* MVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		EF9D58442230D5BD00402937 /* MVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		EF9D58462230D5D200402937 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		EF9D58472230D5D200402937 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		EF9D58492230F6B400402937 /* Present.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Present.h; sourceTree = "<group>"; };
+		EF9D584A2230F6B400402937 /* Present.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Present.m; sourceTree = "<group>"; };
+		EF9D584C2230F6C800402937 /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
+		EF9D584D2230F6C800402937 /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF9D56D82230C7F700402937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF9D56D22230C7F600402937 = {
+			isa = PBXGroup;
+			children = (
+				EF9D56DD2230C7F700402937 /* MVP--MVVM */,
+				EF9D56DC2230C7F700402937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF9D56DC2230C7F700402937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D56DB2230C7F700402937 /* MVP--MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF9D56DD2230C7F700402937 /* MVP--MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D583D2230CFE400402937 /* SKProxy.h */,
+				EF9D583E2230CFE400402937 /* SKProxy.m */,
+				EF9D58372230CB0500402937 /* MVPTableViewCell.h */,
+				EF9D58382230CB0500402937 /* MVPTableViewCell.m */,
+				EF9D58362230CA1200402937 /* PresentDelegate.h */,
+				EF9D58332230C96100402937 /* Model.h */,
+				EF9D58342230C96100402937 /* Model.m */,
+				EF9D58322230C8C900402937 /* MVVM */,
+				EF9D58312230C8BF00402937 /* MVP */,
+				EF9D56DE2230C7F700402937 /* AppDelegate.h */,
+				EF9D56DF2230C7F700402937 /* AppDelegate.m */,
+				EF9D56E12230C7F700402937 /* ViewController.h */,
+				EF9D56E22230C7F700402937 /* ViewController.m */,
+				EF9D56E42230C7F700402937 /* Main.storyboard */,
+				EF9D56E72230C7F800402937 /* Assets.xcassets */,
+				EF9D56E92230C7F800402937 /* LaunchScreen.storyboard */,
+				EF9D56EC2230C7F900402937 /* Info.plist */,
+				EF9D56ED2230C7F900402937 /* main.m */,
+				EF9D58302230C87E00402937 /* PrefixHeader.h */,
+				EF9D56F42230C84100402937 /* Class */,
+			);
+			path = "MVP--MVVM";
+			sourceTree = "<group>";
+		};
+		EF9D56F42230C84100402937 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D56F52230C84100402937 /* Library */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		EF9D56F52230C84100402937 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D58292230C86200402937 /* Model */,
+				EF9D56F62230C84100402937 /* Masonry */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EF9D56F62230C84100402937 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D56F72230C84100402937 /* LICENSE */,
+				EF9D56F82230C84100402937 /* Masonry */,
+				EF9D57122230C84100402937 /* README.md */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EF9D56F82230C84100402937 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D56F92230C84100402937 /* MASCompositeConstraint.h */,
+				EF9D56FA2230C84100402937 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				EF9D56FB2230C84100402937 /* MASConstraint+Private.h */,
+				EF9D56FC2230C84100402937 /* MASLayoutConstraint.h */,
+				EF9D56FD2230C84100402937 /* NSArray+MASShorthandAdditions.h */,
+				EF9D56FE2230C84100402937 /* MASConstraintMaker.h */,
+				EF9D56FF2230C84100402937 /* View+MASAdditions.h */,
+				EF9D57002230C84100402937 /* NSArray+MASAdditions.h */,
+				EF9D57012230C84100402937 /* MASUtilities.h */,
+				EF9D57022230C84100402937 /* MASViewAttribute.h */,
+				EF9D57032230C84100402937 /* ViewController+MASAdditions.m */,
+				EF9D57042230C84100402937 /* MASViewConstraint.h */,
+				EF9D57052230C84100402937 /* MASConstraint.h */,
+				EF9D57062230C84100402937 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				EF9D57072230C84100402937 /* MASCompositeConstraint.m */,
+				EF9D57082230C84100402937 /* MASConstraintMaker.m */,
+				EF9D57092230C84100402937 /* MASLayoutConstraint.m */,
+				EF9D570A2230C84100402937 /* NSArray+MASAdditions.m */,
+				EF9D570B2230C84100402937 /* View+MASAdditions.m */,
+				EF9D570C2230C84100402937 /* View+MASShorthandAdditions.h */,
+				EF9D570D2230C84100402937 /* Masonry.h */,
+				EF9D570E2230C84100402937 /* MASConstraint.m */,
+				EF9D570F2230C84100402937 /* ViewController+MASAdditions.h */,
+				EF9D57102230C84100402937 /* MASViewConstraint.m */,
+				EF9D57112230C84100402937 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EF9D58292230C86200402937 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D582A2230C86200402937 /* YYClassInfo.h */,
+				EF9D582B2230C86200402937 /* NSObject+YYModel.m */,
+				EF9D582C2230C86200402937 /* YYClassInfo.m */,
+				EF9D582D2230C86200402937 /* NSObject+YYModel.h */,
+			);
+			name = Model;
+			path = YYKit/YYKit/Model;
+			sourceTree = "<group>";
+		};
+		EF9D58312230C8BF00402937 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D584C2230F6C800402937 /* MVPViewController.h */,
+				EF9D584D2230F6C800402937 /* MVPViewController.m */,
+				EF9D58492230F6B400402937 /* Present.h */,
+				EF9D584A2230F6B400402937 /* Present.m */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		EF9D58322230C8C900402937 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D58462230D5D200402937 /* MVVMViewController.h */,
+				EF9D58472230D5D200402937 /* MVVMViewController.m */,
+				EF9D58402230D5A200402937 /* BaseViewModel.h */,
+				EF9D58412230D5A200402937 /* BaseViewModel.m */,
+				EF9D58432230D5BD00402937 /* MVVMViewModel.h */,
+				EF9D58442230D5BD00402937 /* MVVMViewModel.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF9D56DA2230C7F700402937 /* MVP--MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9D56F12230C7F900402937 /* Build configuration list for PBXNativeTarget "MVP--MVVM" */;
+			buildPhases = (
+				EF9D56D72230C7F700402937 /* Sources */,
+				EF9D56D82230C7F700402937 /* Frameworks */,
+				EF9D56D92230C7F700402937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MVP--MVVM";
+			productName = "MVP--MVVM";
+			productReference = EF9D56DB2230C7F700402937 /* MVP--MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF9D56D32230C7F600402937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "侯森魁";
+				TargetAttributes = {
+					EF9D56DA2230C7F700402937 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = EF9D56D62230C7F600402937 /* Build configuration list for PBXProject "MVP--MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF9D56D22230C7F600402937;
+			productRefGroup = EF9D56DC2230C7F700402937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF9D56DA2230C7F700402937 /* MVP--MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF9D56D92230C7F700402937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9D56EB2230C7F800402937 /* LaunchScreen.storyboard in Resources */,
+				EF9D56E82230C7F800402937 /* Assets.xcassets in Resources */,
+				EF9D57D42230C84200402937 /* README.md in Resources */,
+				EF9D57C92230C84200402937 /* LICENSE in Resources */,
+				EF9D56E62230C7F700402937 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF9D56D72230C7F700402937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9D57CD2230C84200402937 /* MASConstraintMaker.m in Sources */,
+				EF9D56E32230C7F700402937 /* ViewController.m in Sources */,
+				EF9D57CB2230C84200402937 /* ViewController+MASAdditions.m in Sources */,
+				EF9D584B2230F6B400402937 /* Present.m in Sources */,
+				EF9D58422230D5A200402937 /* BaseViewModel.m in Sources */,
+				EF9D58352230C96100402937 /* Model.m in Sources */,
+				EF9D58482230D5D200402937 /* MVVMViewController.m in Sources */,
+				EF9D57D22230C84200402937 /* MASViewConstraint.m in Sources */,
+				EF9D56EE2230C7F900402937 /* main.m in Sources */,
+				EF9D583F2230CFE400402937 /* SKProxy.m in Sources */,
+				EF9D57CE2230C84200402937 /* MASLayoutConstraint.m in Sources */,
+				EF9D57D12230C84200402937 /* MASConstraint.m in Sources */,
+				EF9D57CF2230C84200402937 /* NSArray+MASAdditions.m in Sources */,
+				EF9D58392230CB0500402937 /* MVPTableViewCell.m in Sources */,
+				EF9D56E02230C7F700402937 /* AppDelegate.m in Sources */,
+				EF9D584E2230F6C800402937 /* MVPViewController.m in Sources */,
+				EF9D582E2230C86200402937 /* NSObject+YYModel.m in Sources */,
+				EF9D57CC2230C84200402937 /* MASCompositeConstraint.m in Sources */,
+				EF9D57D02230C84200402937 /* View+MASAdditions.m in Sources */,
+				EF9D58452230D5BD00402937 /* MVVMViewModel.m in Sources */,
+				EF9D57CA2230C84200402937 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EF9D582F2230C86200402937 /* YYClassInfo.m in Sources */,
+				EF9D57D32230C84200402937 /* MASViewAttribute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF9D56E42230C7F700402937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9D56E52230C7F700402937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF9D56E92230C7F800402937 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9D56EA2230C7F800402937 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF9D56EF2230C7F900402937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF9D56F02230C7F900402937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF9D56F22230C7F900402937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVP--MVVM/Class/Library/YYKit/Vendor",
+				);
+				GCC_PREFIX_HEADER = "MVP--MVVM/PrefixHeader.h";
+				INFOPLIST_FILE = "MVP--MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "housenkui-gmail.com.MVP--MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF9D56F32230C7F900402937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVP--MVVM/Class/Library/YYKit/Vendor",
+				);
+				GCC_PREFIX_HEADER = "MVP--MVVM/PrefixHeader.h";
+				INFOPLIST_FILE = "MVP--MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "housenkui-gmail.com.MVP--MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF9D56D62230C7F600402937 /* Build configuration list for PBXProject "MVP--MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9D56EF2230C7F900402937 /* Debug */,
+				EF9D56F02230C7F900402937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9D56F12230C7F900402937 /* Build configuration list for PBXNativeTarget "MVP--MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9D56F22230C7F900402937 /* Debug */,
+				EF9D56F32230C7F900402937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF9D56D32230C7F600402937 /* Project object */;
+}
