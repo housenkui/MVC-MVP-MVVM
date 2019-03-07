@@ -21,6 +21,7 @@ static NSString *const resuerId = @"resuerId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadData];
+    
     __weak __typeof(self) weakSelf = self;
     self.subTarget = [[Target alloc]initWithIdentifier:resuerId configureBlock:^(MVPTableViewCell* cell, Model * model, NSIndexPath *indexPath) {
         __strong __typeof(weakSelf)strongSelf = weakSelf;
@@ -113,6 +114,7 @@ static NSString *const resuerId = @"resuerId";
         _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         [_tableView registerClass:[MVPTableViewCell class] forCellReuseIdentifier:resuerId];
+        _tableView.rowHeight = 44;
     }
     return _tableView;
 }

@@ -6,8 +6,6 @@
 //  Copyright © 2019年 侯森魁. All rights reserved.
 //
 
-//
-
 // 只在viewModel里进行 数据请求 和逻辑处理 绝不写在V里
 #import "MVVMViewModel.h"
 

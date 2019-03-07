@@ -33,9 +33,6 @@
 		EF9D56BB222FEDAB00402937 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56BA222FEDAB00402937 /* Model.m */; };
 		EF9D56C1223013F800402937 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56BE223013F700402937 /* NSObject+YYModel.m */; };
 		EF9D56C2223013F800402937 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56BF223013F700402937 /* YYClassInfo.m */; };
-		EF9D56C622309F4A00402937 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56C522309F4A00402937 /* BaseViewModel.m */; };
-		EF9D56C92230A01200402937 /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56C82230A01200402937 /* MVVMViewModel.m */; };
-		EF9D56CC2230A56E00402937 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D56CB2230A56E00402937 /* MVVMViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,12 +90,6 @@
 		EF9D56BE223013F700402937 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		EF9D56BF223013F700402937 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		EF9D56C0223013F700402937 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		EF9D56C422309F4A00402937 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
-		EF9D56C522309F4A00402937 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
-		EF9D56C72230A01200402937 /* MVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
-		EF9D56C82230A01200402937 /* MVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
-		EF9D56CA2230A56E00402937 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
-		EF9D56CB2230A56E00402937 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		EF9D56CE2230A5E400402937 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +131,6 @@
 				EF9D56A9222FECDF00402937 /* PresentDelegate.h */,
 				EF9D56B9222FEDAB00402937 /* Model.h */,
 				EF9D56BA222FEDAB00402937 /* Model.m */,
-				EF9D56C322309F3100402937 /* MVVM */,
 				EF9D56AD222FED0600402937 /* MVC */,
 				EF9D56B2222FED5D00402937 /* MVP */,
 				EF9D5571222FEC3E00402937 /* Class */,
@@ -248,19 +238,6 @@
 			path = YYKit/YYKit/Model;
 			sourceTree = "<group>";
 		};
-		EF9D56C322309F3100402937 /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				EF9D56CA2230A56E00402937 /* MVVMViewController.h */,
-				EF9D56CB2230A56E00402937 /* MVVMViewController.m */,
-				EF9D56C422309F4A00402937 /* BaseViewModel.h */,
-				EF9D56C522309F4A00402937 /* BaseViewModel.m */,
-				EF9D56C72230A01200402937 /* MVVMViewModel.h */,
-				EF9D56C82230A01200402937 /* MVVMViewModel.m */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,14 +323,11 @@
 				EF9D564C222FEC3E00402937 /* NSArray+MASAdditions.m in Sources */,
 				EF9D56C1223013F800402937 /* NSObject+YYModel.m in Sources */,
 				EF9D56BB222FEDAB00402937 /* Model.m in Sources */,
-				EF9D56C622309F4A00402937 /* BaseViewModel.m in Sources */,
 				EF9D56C2223013F800402937 /* YYClassInfo.m in Sources */,
 				EF9D555D222FEA6800402937 /* AppDelegate.m in Sources */,
 				EF9D5649222FEC3E00402937 /* MASCompositeConstraint.m in Sources */,
 				EF9D564D222FEC3E00402937 /* View+MASAdditions.m in Sources */,
 				EF9D56B5222FED7C00402937 /* MVPViewController.m in Sources */,
-				EF9D56C92230A01200402937 /* MVVMViewModel.m in Sources */,
-				EF9D56CC2230A56E00402937 /* MVVMViewController.m in Sources */,
 				EF9D5647222FEC3E00402937 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				EF9D5650222FEC3E00402937 /* MASViewAttribute.m in Sources */,
 				EF9D56A8222FECA600402937 /* Target.m in Sources */,
