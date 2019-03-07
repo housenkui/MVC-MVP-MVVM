@@ -33,7 +33,7 @@ static NSString *const reuserId = @"reuserId";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"合计：" style:(UIBarButtonItemStyleDone) target:self action:nil];
     
     __weak __typeof(self) weakSelf = self;
