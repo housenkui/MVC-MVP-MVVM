@@ -26,7 +26,8 @@ static NSString *const reuserId = @"reuserId";
         _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         [_tableView registerClass:[MVPTableViewCell class] forCellReuseIdentifier:reuserId];
-        
+        _tableView.rowHeight = 44;
+
     }
     return _tableView;
 }
